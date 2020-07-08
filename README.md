@@ -30,8 +30,8 @@
 |group_id|integer|null: false, foreign_key: true|
 
 ### Association
-- belong_to :user
-- belong_to :group
+- belongs_to :user
+- belongs_to :group
 
 ## chatsテーブル
 
@@ -44,4 +44,4 @@
 
 ### Association
 - belongs_to :group
-- belong_to :user
+- belongs_to :user
