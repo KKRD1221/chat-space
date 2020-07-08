@@ -2,8 +2,8 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|name|integer|null: false|
-|e-mail|integer|null: false|
+|name|string|null: false|
+|e-mail|string|null: false|
 
 ### Association
 - has_many :groups, through: :groups_users
