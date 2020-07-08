@@ -19,6 +19,7 @@
 - has_many :users, through: 
 :groups_users
 - has_many :chats
+- has_many :groups_users
 
 ## groups_usersテーブル
 
