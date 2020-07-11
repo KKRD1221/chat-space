@@ -6,194 +6,165 @@
   display: flex;
 }
 
-.main {
-  background-color: #ffffff;
-  width: calc(100vw - 300px);
-  height: 100vh;
-}
-
 .side {
   background-color: #253141;
   width: 300px;
   height: 100vh;
+  .side__username {
+    background-color: #253141;
+    height: 100px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    .side__list {
+      height: 20px;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      .side__name {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .side__iconlist {
+        width: 60px;
+        display: flex;
+        justify-content: flex-end;
+        .side__icon1--edit {
+          color: #ffffff;
+        }
+        .side__icon2--cog {
+          color: #ffffff;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+  .side__grouplist {
+    background-color: #2f3e51;
+    height: calc(100vh - 100px);
+    padding: 0 20px;
+    .side__group {
+      padding: 20px 0 40px;
+      color: #ffffff;
+      font-weight: bold;
+      .side__groupname {
+        font-size: 15px;
+      }
+      .side__groupmessage {
+        font-size: 11px;
+        margin-top: 5px;
+      }
+    }
+  }
 }
 
-.side__username {
-  background-color: #253141;
-  height: 100px;
-  padding: 0 20px;
-  display: flex;
-  align-items: center;
-}
-
-.side__grouplist {
-  background-color: #2f3e51;
-  height: calc(100vh - 100px);
-  padding: 0 20px;
-}
-
-.main__groupinfo {
-  height: 100px;
-  border-bottom: solid 1px #eeeeee;
-  padding: 0 40px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.main__messagelist {
-  background-color: #fafafa;
-  height: calc(100vh - 190px);
-  padding: 35px 0 0 40px;
-}
-
-.main__messagefield {
-  background-color: #d2d2d2;
-  height: 90px;
-  display: flex;
-  align-items: center;
-  padding: 0 40px;
-}
-
-.side__list {
-  height: 20px;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.side__name {
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.side__iconlist {
-  width: 60px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.side__icon1--edit {
-  color: #ffffff;
-}
-
-.side__icon2--cog {
-  color: #ffffff;
-  margin-left: 5px;
-}
-
-.side__group {
-  padding: 20px 0 40px;
-  color: #ffffff;
-  font-weight: bold;
-}
-
-.side__groupname {
-  font-size: 15px;
-}
-
-.side__groupmessage {
-  font-size: 11px;
-  margin-top: 5px;
-}
-
-.main__group {
-  padding-top: 35px;
-}
-
-.main__groupname {
-  color: #333333;
-  font-size: 20px;
-  margin-bottom: 15px;
-}
-
-.main__memberlist {
-  font-size: 12px;
-  color: #999999;
-}
-
-.main__edit {
-  margin-top: 28px;
-  padding: 0px 20px;
-  line-height: 40px;
-  height: 40px;
-  width: 72px;
-  color: #38aef0;
-  font-size: 16px;
-  border: 1px solid #38aef0;
-  text-decoration: none;
-}
-
-.main__messagebox {
-  margin-bottom: 46px;
-}
-
-.main__messageinfo {
-  margin-bottom: 12px;
-  display: flex;
-}
-
-.main__username {
-  color: #333333;
-  font-size: 16px;
-}
-
-.main__date {
-  color: #999999;
-  font-size: 12px;
-  padding-left: 10px;
-}
-
-.main__message {
-  font-size: 14px;
-  color: #434a54;
-}
-
-.main__form {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.main__messageform {
-  height: 50px;
-  width: 100%;
+.main {
   background-color: #ffffff;
-  position: relative;
-}
-
-.main__messagecontent {
-  width: 100%;
-  height: 50px;
-  color: #d2d2d2;
-  line-height: 50px;
-  padding: 0 40px 0 10px;
-}
-
-.main__messageimage {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  height: 50px;
-}  
-
-.main__icon {
-  line-height: 50px;
-  font-size: 25px;
-}
-
-.hidden {
-  display: none;
-}
-
-.main__send {
-  margin-left: 15px;
-  padding: 0 30px;
-  background-color: #38aef0;
-  color: #ffffff;
-  font-size: 16px;
-  height: 50px;
-  line-height: 50px;
+  width: calc(100vw - 300px);
+  height: 100vh;
+  .main__groupinfo {
+    height: 100px;
+    border-bottom: solid 1px #eeeeee;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    .main__group {
+      padding-top: 35px;
+      .main__groupname {
+        color: #333333;
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+      .main__memberlist {
+        font-size: 12px;
+        color: #999999;
+      } 
+    }
+    .main__edit {
+      margin-top: 28px;
+      padding: 0px 20px;
+      line-height: 40px;
+      height: 40px;
+      width: 72px;
+      color: #38aef0;
+      font-size: 16px;
+      border: 1px solid #38aef0;
+      text-decoration: none;
+    }
+  }
+  .main__messagelist {
+    background-color: #fafafa;
+    height: calc(100vh - 190px);
+    padding: 35px 0 0 40px;
+    .main__messagebox {
+      margin-bottom: 46px;
+      .main__messageinfo {
+        margin-bottom: 12px;
+        display: flex;
+        .main__username {
+          color: #333333;
+          font-size: 16px;
+        }
+        .main__date {
+          color: #999999;
+          font-size: 12px;
+          padding-left: 10px;
+        }
+      }
+      .main__message {
+        font-size: 14px;
+        color: #434a54;
+      }
+    }
+  }
+  .main__messagefield {
+    background-color: #d2d2d2;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    .main__form {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      .main__messageform {
+        height: 50px;
+        width: 100%;
+        background-color: #ffffff;
+        position: relative;
+        .main__messagecontent {
+          width: 100%;
+          height: 50px;
+          color: #d2d2d2;
+          line-height: 50px;
+          padding: 0 40px 0 10px;
+        }
+        .main__messageimage {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          height: 50px;
+          .main__icon {
+            line-height: 50px;
+            font-size: 25px;
+          }
+          .hidden {
+            display: none;
+          }
+        }  
+      }
+      .main__send {
+        margin-left: 15px;
+        padding: 0 30px;
+        background-color: #38aef0;
+        color: #ffffff;
+        font-size: 16px;
+        height: 50px;
+        line-height: 50px;
+      }
+    }
+  }
 }
 
