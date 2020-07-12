@@ -1,0 +1,47 @@
+.main
+  
+  .main__groupinfo
+    .main__group
+      .main__groupname
+        test
+      .main__memberlist
+        Member : masa
+    = link_to "#", class: "main__edit" do
+      Edit
+    
+  .main__messagelist
+    
+    .main__messagebox
+      .main__messageinfo
+        .main__username
+          masa
+        .main__date
+          2019/11/20(Wed) 17:43:01
+      .main__message
+        おはよう！
+
+    .main__messagebox
+      .main__messageinfo
+        .main__username
+          masa
+        .main__date
+          2019/11/20(Wed) 17:43:34 
+      .main__message
+        今日は夜から雨
+
+  .main__messagefield
+
+    .main__form
+      .main__messageform
+        .main__messagecontent
+          type a message
+        %label{class: "main__messageimage"}
+          = icon('fas', 'image',  class: "main__icon")
+          %input{type: "file", class: "hidden"}
+
+      .main__send
+        Send 
+
+
+
+  
