@@ -10,48 +10,48 @@
   background-color: #253141;
   width: 300px;
   height: 100vh;
-  .side__username {
+  .&__username {
     background-color: #253141;
     height: 100px;
     padding: 0 20px;
     display: flex;
     align-items: center;
-    .side__list {
+    .&__list {
       height: 20px;
       display: flex;
       justify-content: space-between;
       width: 100%;
-      .side__name {
+      .&__name {
         color: #ffffff;
         font-size: 16px;
         font-weight: bold;
       }
-      .side__iconlist {
+      .&__iconlist {
         width: 60px;
         display: flex;
         justify-content: flex-end;
-        .side__icon1--edit {
+        .&__icon1--edit {
           color: #ffffff;
         }
-        .side__icon2--cog {
+        .&__icon2--cog {
           color: #ffffff;
           margin-left: 5px;
         }
       }
     }
   }
-  .side__grouplist {
+  .&__grouplist {
     background-color: #2f3e51;
     height: calc(100vh - 100px);
     padding: 0 20px;
-    .side__group {
+    .&__group {
       padding: 20px 0 40px;
       color: #ffffff;
       font-weight: bold;
-      .side__groupname {
+      .&__groupname {
         font-size: 15px;
       }
-      .side__groupmessage {
+      .&__groupmessage {
         font-size: 11px;
         margin-top: 5px;
       }
@@ -63,25 +63,25 @@
   background-color: #ffffff;
   width: calc(100vw - 300px);
   height: 100vh;
-  .main__groupinfo {
+  .&__groupinfo {
     height: 100px;
     border-bottom: solid 1px #eeeeee;
     padding: 0 40px;
     display: flex;
     justify-content: space-between;
-    .main__group {
+    .&__group {
       padding-top: 35px;
-      .main__groupname {
+      .&__groupname {
         color: #333333;
         font-size: 20px;
         margin-bottom: 15px;
       }
-      .main__memberlist {
+      .&__memberlist {
         font-size: 12px;
         color: #999999;
       } 
     }
-    .main__edit {
+    .&__edit {
       margin-top: 28px;
       padding: 0px 20px;
       line-height: 40px;
@@ -93,60 +93,60 @@
       text-decoration: none;
     }
   }
-  .main__messagelist {
+  .&__messagelist {
     background-color: #fafafa;
     height: calc(100vh - 190px);
     padding: 35px 0 0 40px;
-    .main__messagebox {
+    .&__messagebox {
       margin-bottom: 46px;
-      .main__messageinfo {
+      .&__messageinfo {
         margin-bottom: 12px;
         display: flex;
-        .main__username {
+        .&__username {
           color: #333333;
           font-size: 16px;
         }
-        .main__date {
+        .&__date {
           color: #999999;
           font-size: 12px;
           padding-left: 10px;
         }
       }
-      .main__message {
+      .&__message {
         font-size: 14px;
         color: #434a54;
       }
     }
   }
-  .main__messagefield {
+  .&__messagefield {
     background-color: #d2d2d2;
     height: 90px;
     display: flex;
     align-items: center;
     padding: 0 40px;
-    .main__form {
+    .&__form {
       display: flex;
       justify-content: space-between;
       align-items: center;
       width: 100%;
-      .main__messageform {
+      .&__messageform {
         height: 50px;
         width: 100%;
         background-color: #ffffff;
         position: relative;
-        .main__messagecontent {
+        .&__messagecontent {
           width: 100%;
           height: 50px;
           color: #d2d2d2;
           line-height: 50px;
           padding: 0 40px 0 10px;
         }
-        .main__messageimage {
+        .&__messageimage {
           position: absolute;
           top: 10px;
           right: 10px;
           height: 50px;
-          .main__icon {
+          .&__icon {
             line-height: 50px;
             font-size: 25px;
           }
@@ -155,7 +155,7 @@
           }
         }  
       }
-      .main__send {
+      .&__send {
         margin-left: 15px;
         padding: 0 30px;
         background-color: #38aef0;
