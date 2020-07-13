@@ -3,11 +3,11 @@
   .side__username
     .side__list
       .side__name
-        masa
+        = current_user.name
       .side__iconlist
         = link_to "#", class: "side__icon1--edit" do
           = icon('far', 'edit')
-        = link_to "#", class: "side__icon2--cog" do
+        = link_to edit_user_path(current_user), class: "side__icon2--cog" do
           = icon('fas', 'cog')
   
   .side__grouplist
