@@ -1,46 +1,28 @@
 .main
-  
+
   .main__groupinfo
     .main__group
       .main__groupname
-        test
-      .main__memberlist
-        Member : masa
-    = link_to "#", class: "main__edit" do
+        =@group.name
+      %ul.main__memberlist
+        Member :
+        %li.main__member 
+          - @group.users.each do |user|
+            =user.name
+    = link_to edit_group_path(@group), class: "main__edit" do
       Edit
     
   .main__messagelist
-    
-    .main__messagebox
-      .main__messageinfo
-        .main__username
-          masa
-        .main__date
-          2019/11/20(Wed) 17:43:01
-      .main__message
-        おはよう！
-
-    .main__messagebox
-      .main__messageinfo
-        .main__username
-          masa
-        .main__date
-          2019/11/20(Wed) 17:43:34 
-      .main__message
-        今日は夜から雨
+    = render @messages
 
   .main__messagefield
-
-    .main__form
+    = form_with model: [@group, @message], html: {class: "main__form"}, local: true do |f|
       .main__messageform
-        .main__messagecontent
-          type a message
-        %label{class: "main__messageimage"}
-          = icon('fas', 'image',  class: "main__icon")
-          %input{type: "file", class: "hidden"}
-
-      .main__send
-        Send 
+        = f.text_field :content, class: 'main__messagecontent', placeholder: 'type a message'
+        = f.label :image, class: 'main__messageimage' do
+          = icon('far', 'image', class: 'main__icon')
+          = f.file_field :image, class: 'hidden'
+      = f.submit 'Send', class: 'main__send'
 
 
 
